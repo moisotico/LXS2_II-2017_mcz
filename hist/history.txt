@@ -1,0 +1,175 @@
+    1  su - estudiante
+    2  su - soporte
+    3  man git
+    4  git init
+    5  cd ~/Documentos
+    6  cd ~/Documents/
+    7  git config
+    8  git config --global user.name "Moiso"
+    9  git config --global user.email "moiso.camposcr@gmail.com"
+   10  git remote -v
+   11  tree -a
+   12  sudo apt install tree
+   13* cd LXS2_II-2017_mczz
+   14  cd LXS2_II-2017_mcz/
+   15  git init
+   16  sudo apt-get install tree
+   17  su - soporte
+   18  su - soport
+   19  touch {logs,misc,src,data}/file1
+   20  mkdir {logs,misc,src,data}
+   21  touch {logs,misc,src,data}/file1
+   22  git status
+   23  git add -a
+   24  git add --all
+   25  ls
+   26  git status
+   27  touch data/file2
+   28  git status
+   29  ls
+   30  last > misc/ultimo_acceso.log
+   31  ls
+   32  dmesg | head >> data/file1
+   33  git status 
+   34  git add data/file*
+   35  git status 
+   36  git commit -m "Dos nuevos archivos"
+   37  git status
+   38  git log
+   39  git remote add origin https://github.com/moisotico/LXS2_II-2017_mcz.git
+   40  git remote -v
+   41  git push -u origin master
+   42  git log
+   43  git pull
+   44  git log
+   45  ls
+   46  mkdir histories
+   47  ls
+   48  rmdir histories/
+   49  ls
+   50  mkdir hist
+   51  echo $PS!
+   52  echo $PS1
+   53  ps1 = $PS1
+   54  ps1=$PS1
+   55  echo $ps1
+   56  PS1="comandos>"
+   57  ls
+   58  PS1=$ps1
+   59  echo $PS1
+   60  alias
+   61  Alias
+   62  alias
+   63  l
+   64  ll
+   65  alias STm= 'date +%Y%m%d'
+   66  cd
+   67  alias
+   68  alias STm='date +%Y%m%d'
+   69  STm
+   70  var_time=`STm`
+   71  mkdir history
+   72  history > history/history-$var_time
+   73  tree
+   74  ls history/history-20170318 
+   75  history > history/history-`STm`.log
+   76  alias STm='date +%Y%m%d_%H:%M'
+   77  STm
+   78  history > history/history-`STm`.log
+   79  tree
+   80  alias -p
+   81  STm
+   82  ls -l
+   83  /bin/ls
+   84  /bin/ls -l
+   85  \ls
+   86  reportes () { cd /usr/share/doc; echo "Reporte `date +%Y%m%d`" > /tmp/reporte; date >> /tmp/reporte; pwd >> /tmp/reporte; du -sh . >> /tmp/reporte; }
+   87  reportes
+   88  ls
+   89  cat /tmp/reporte 
+   90  cd ~/Documents/LXS2_II-2017_mcz/
+   91  ls
+   92  cd src/
+   93  ls
+   94  ls -la
+   95  echo'#!/bin/bash' > monitor.sh
+   96  echo '#!/bin/bash' > monitor.sh
+   97  cat monitor.sh 
+   98  echo 'cd /usr/share/doc' >> monitor.sh
+   99  ls
+  100  echo 'echo Reporte:' >> monitor.sh
+  101  echo 'echo Reporte: >> /tmp/reporte' >> monitor.sh
+  102  echo 'date  >> /tmp/reporte' >> monitor.sh
+  103  echo 'pwd  >> /tmp/reporte' >> monitor.sh
+  104  echo 'du -sh .  >> /tmp/reporte' >> monitor.sh
+  105  cat monitor.sh 
+  106  vim monitor.sh 
+  107  rm /tmp/reporte 
+  108  vim monitor.sh 
+  109  chmod 764 monitor.sh 
+  110  vim monitor.sh 
+  111  git status
+  112  git pull
+  113  git add monitor.sh 
+  114  git status
+  115  git commit -m "Creación del script de monitoreo"
+  116  git push origin master
+  117  git status
+  118  history | grep git
+  119  git log
+  120  cd ..
+  121  ls
+  122  Documents/
+  123  cd Documents/
+  124  git clone  https://github.com/emvarg/LXS2_II-2017_evb.git repo-del-profe
+  125  ls
+  126  ls -la
+  127  cd LXS2_II-2017_mcz/
+  128  ls -la
+  129  cd ..
+  130  cd repo-del-profe/
+  131  ls -la
+  132  git remote -v
+  133  cd ..
+  134  cd LXS2_II-2017_mcz/
+  135  ls
+  136  cd src/
+  137  ls
+  138  vim monitor.sh 
+  139  cd ..
+  140  cd repo-del-profe/
+  141  git pull
+  142  cd ..
+  143  ls
+  144  cd LXS2_II-2017_mcz/
+  145  ls
+  146  cd src/
+  147  ls
+  148  vim monitor.sh 
+  149  ls
+  150  ll
+  151  var=casa
+  152  man test
+  153  su - soporte
+  154  ls
+  155  ./monitor.sh 
+  156  cd
+  157  var2=casa
+  158  var=casa
+  159  test "$var2"="$var"
+  160  echo$?
+  161  echo $?
+  162  test "$var2"="$var"
+  163  echo $?
+  164  test $var2 = $var
+  165  echo $?
+  166  echo $USER
+  167  if [ $USER = 'estudiante' ]; then      echo 'el usuario puede continuar'; fi
+  168  if [ $USER = 'ostudiante' ]; then; echo 'el usuario puede continuar'; fi
+  169  if [ $USER = 'ostudiante' ]; then echo 'el usuario puede continuar'; fi
+  170  if [ $USER = 'ostudiante' ]; then echo 'el estudiante es'; fi
+  171  cd Documents/LXS2_II-2017_mcz/
+  172  ls
+  173  cd hist/
+  174  ls
+  175  history > history.txt
